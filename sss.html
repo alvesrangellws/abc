@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Store</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+        }
+        
+        header {
+            background-color: #1f1f1f;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            color: #e91e63;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+            padding: 10px 0;
+        }
+        
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.2em;
+        }
+        
+        nav a:hover {
+            color: #e91e63;
+        }
+        
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+        
+        .product {
+            background-color: #1f1f1f;
+            border: 1px solid #333;
+            border-radius: 10px;
+            width: 300px;
+            margin: 20px;
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        
+        .product:hover {
+            transform: scale(1.05);
+        }
+        
+        .product img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        
+        .product h2 {
+            font-size: 1.5em;
+            margin: 10px 0;
+            color: #e91e63;
+        }
+        
+        .product p {
+            font-size: 1em;
+            margin: 10px 0;
+        }
+        
+        .product button {
+            background-color: #e91e63;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1em;
+            color: #ffffff;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        
+        .product button:hover {
+            background-color: #d81b60;
+        }
+        
+        footer {
+            background-color: #1f1f1f;
+            padding: 20px;
+            text-align: center;
+            color: #757575;
+        }
+        
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Game Store</h1>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Games</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <div class="container">
+        <div class="product">
+            <img src="game1.jpg" alt="Game 1">
+            <h2>Game Title 1</h2>
+            <p>Exciting action-packed game.</p>
+            <button>Buy Now</button>
+        </div>
+        <div class="product">
+            <img src="game2.jpg" alt="Game 2">
+            <h2>Game Title 2</h2>
+            <p>Thrilling adventure awaits.</p>
+            <button>Buy Now</button>
+        </div>
+        <div class="product">
+            <img src="game3.jpg" alt="Game 3">
+            <h2>Game Title 3</h2>
+            <p>Step into a fantasy world.</p>
+            <button>Buy Now</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Game Store. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
